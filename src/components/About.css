@@ -1,0 +1,182 @@
+.about {
+    background-color: var(--color-bg-secondary);
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-2xl);
+    margin-top: var(--spacing-4xl);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.metric-card {
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-3xl) var(--spacing-2xl);
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+.metric-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-accent);
+}
+
+.metric-number {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    line-height: 1;
+    margin-bottom: var(--spacing-md);
+}
+
+.metric-label {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.subsection-title {
+    font-size: var(--font-size-3xl);
+    text-align: center;
+    margin-top: var(--spacing-4xl);
+    margin-bottom: var(--spacing-lg);
+}
+
+.subsection-subtitle {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto var(--spacing-3xl);
+    color: var(--color-text-secondary);
+}
+
+.tabs {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-2xl);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tab {
+    padding: var(--spacing-md) var(--spacing-xl);
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.tab:hover {
+    border-color: var(--color-accent);
+    color: var(--color-text-primary);
+}
+
+.tab.active {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: white;
+}
+
+.tab-content {
+    min-height: 200px;
+    animation: fadeIn 0.4s ease-out;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-lg);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tech-item {
+    padding: var(--spacing-lg);
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    font-weight: 500;
+    transition: all var(--transition-base);
+}
+
+.tech-item:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 55, 29, 0.15);
+}
+
+.capabilities-section {
+    margin-top: var(--spacing-4xl);
+    padding-top: var(--spacing-4xl);
+    border-top: 1px solid var(--color-border);
+}
+
+.capabilities-title {
+    text-align: center;
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--color-text-tertiary);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-base);
+}
+
+.skill-bullet {
+    color: var(--color-accent);
+    font-size: var(--font-size-xl);
+    line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .metrics-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .metric-number {
+        font-size: 2.5rem;
+    }
+
+    .tabs {
+        flex-direction: column;
+    }
+
+    .tab {
+        width: 100%;
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
