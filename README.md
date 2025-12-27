@@ -2,4 +2,4 @@
 
 Personal portfolio website showcasing my work as a Product Manager.
 
-Visit: [vineeth-portfolio.vercel.app](https://vineeth-portfolio.vercel.app)
+Visit: [https://portfolio-rho-ashen-12.vercel.app/](https://portfolio-rho-ashen-12.vercel.app/)

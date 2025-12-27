@@ -37,6 +37,13 @@ const Works = () => {
             tags: ['Leadership', 'Event Management'],
             image: '/images/project-5.jpg',
             url: 'https://github.com/Vineeth-M-R'
+        },
+        {
+            id: 6,
+            title: 'My CV',
+            tags: ['Resume', 'Professional'],
+            image: '/images/project-6.jpg',
+            url: 'https://drive.google.com/file/d/1EAzp8ndQs07xCBSXGGTwE17c_S-jQ8-8/view?usp=sharing'
         }
     ];
 
